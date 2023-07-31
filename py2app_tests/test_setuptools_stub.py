@@ -429,7 +429,6 @@ class TestSetuptoolsConfiguration(TestCase):
                     errors.DistutilsOptionError,
                     "target definition should be a sequence: 42",
                 ):
-
                     self.run_setuptools(
                         commandline_options=["setup.py", "py2app2"],
                         setup_keywords={kind: 42},
@@ -441,7 +440,6 @@ class TestSetuptoolsConfiguration(TestCase):
                 with self.assertRaisesRegex(
                     errors.DistutilsOptionError, "42 is not a valid target definition"
                 ):
-
                     self.run_setuptools(
                         commandline_options=["setup.py", "py2app2"],
                         setup_keywords={kind: [42]},

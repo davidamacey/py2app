@@ -35,5 +35,4 @@ class TestRecipeImports(unittest.TestCase):
                 pass
 
             else:
-
                 self.fail(f"Can import {mod!r}")
