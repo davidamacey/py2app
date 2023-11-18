@@ -10,7 +10,7 @@ from functools import singledispatch
 from importlib.util import MAGIC_NUMBER
 from itertools import chain
 from typing import Any, Dict, Union
-from yping_extensions import assert_never
+from typing_extensions import assert_never
 
 from modulegraph2 import (
     BytecodeModule,
